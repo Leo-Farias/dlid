@@ -28,4 +28,4 @@ Impeça o baú de cair no chão, para cada acerto você ganha 1 ponto. Cada vez 
 * ``a/d``: Mover Esquerda/Direita;
 * ``w``: Pular;
 
-OBS: Para recomeçar o jogo renicie a página do navegador.
+OBS: Para recomeçar o jogo reinicie a página do navegador.
