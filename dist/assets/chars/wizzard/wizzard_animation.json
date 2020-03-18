@@ -1,0 +1,95 @@
+{
+"frames": {
+	"wizzard_f_hit_anim_f0.png": {
+		"frame": {"x":32, "y":42, "w":15, "h":21},
+		"spriteSourceSize": {"x":0,"y":5,"w":16,"h":28},
+		"sourceSize": {"w":16,"h":28}
+	},
+	"wizzard_f_idle_left_01.png": {
+		"frame": {"x":64, "y":22, "w":15, "h":18},
+		"spriteSourceSize": {"x":0,"y":0,"w":15,"h":18},
+		"sourceSize": {"w":15,"h":18}
+	},
+	"wizzard_f_idle_left_02.png": {
+		"frame": {"x":0, "y":0, "w":16, "h":18},
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":18},
+		"sourceSize": {"w":16,"h":18}
+	},
+	"wizzard_f_idle_left_03.png": {
+		"frame": {"x":48, "y":61, "w":15, "h":21},
+		"spriteSourceSize": {"x":0,"y":0,"w":15,"h":21},
+		"sourceSize": {"w":15,"h":21}
+	},
+	"wizzard_f_idle_left_04.png": {
+		"frame": {"x":48, "y":40, "w":15, "h":20},
+		"spriteSourceSize": {"x":0,"y":0,"w":15,"h":20},
+		"sourceSize": {"w":15,"h":20}
+	},
+	"wizzard_f_idle_right_01.png": {
+		"frame": {"x":0, "y":19, "w":16, "h":18},
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":18},
+		"sourceSize": {"w":16,"h":18}
+	},
+	"wizzard_f_idle_right_02.png": {
+		"frame": {"x":32, "y":64, "w":15, "h":18},
+		"spriteSourceSize": {"x":0,"y":0,"w":15,"h":18},
+		"sourceSize": {"w":15,"h":18}
+	},
+	"wizzard_f_idle_right_03.png": {
+		"frame": {"x":33, "y":0, "w":15, "h":20},
+		"spriteSourceSize": {"x":0,"y":0,"w":15,"h":20},
+		"sourceSize": {"w":15,"h":20}
+	},
+	"wizzard_f_idle_right_04.png": {
+		"frame": {"x":64, "y":41, "w":15, "h":21},
+		"spriteSourceSize": {"x":0,"y":0,"w":15,"h":21},
+		"sourceSize": {"w":15,"h":21}
+	},
+	"wizzard_f_run_left_01.png": {
+		"frame": {"x":64, "y":0, "w":15, "h":21},
+		"spriteSourceSize": {"x":0,"y":0,"w":15,"h":21},
+		"sourceSize": {"w":15,"h":21}
+	},
+	"wizzard_f_run_left_02.png": {
+		"frame": {"x":17, "y":0, "w":15, "h":22},
+		"spriteSourceSize": {"x":0,"y":0,"w":15,"h":22},
+		"sourceSize": {"w":15,"h":22}
+	},
+	"wizzard_f_run_left_03.png": {
+		"frame": {"x":48, "y":21, "w":15, "h":18},
+		"spriteSourceSize": {"x":0,"y":0,"w":15,"h":18},
+		"sourceSize": {"w":15,"h":18}
+	},
+	"wizzard_f_run_left_04.png": {
+		"frame": {"x":16, "y":38, "w":15, "h":18},
+		"spriteSourceSize": {"x":0,"y":0,"w":15,"h":18},
+		"sourceSize": {"w":15,"h":18}
+	},
+	"wizzard_f_run_right_01.png": {
+		"frame": {"x":32, "y":23, "w":15, "h":18},
+		"spriteSourceSize": {"x":0,"y":0,"w":15,"h":18},
+		"sourceSize": {"w":15,"h":18}
+	},
+	"wizzard_f_run_right_02.png": {
+		"frame": {"x":16, "y":57, "w":15, "h":21},
+		"spriteSourceSize": {"x":0,"y":0,"w":15,"h":21},
+		"sourceSize": {"w":15,"h":21}
+	},
+	"wizzard_f_run_right_03.png": {
+		"frame": {"x":0, "y":61, "w":15, "h":18},
+		"spriteSourceSize": {"x":0,"y":0,"w":15,"h":18},
+		"sourceSize": {"w":15,"h":18}
+	},
+	"wizzard_f_run_right_04.png": {
+		"frame": {"x":0, "y":38, "w":15, "h":22},
+		"spriteSourceSize": {"x":0,"y":0,"w":15,"h":22},
+		"sourceSize": {"w":15,"h":22}
+	}
+
+},
+"meta": {
+	"image": "wizzard_animation.png",
+	"size": {"w": 80, "h": 83},
+	"scale": "1"
+}
+}
