@@ -24,6 +24,7 @@ parcel index.html
 ```
 
 # Comandos/Regras
-Impeça o baú de cair no chão, para cada acerto você ganha 1 ponto. Cada vez que ganha 5 pantas facas aparecem no mapa dificultando o jogo, se o baú cair ou alguma das facas o acertarem o jogo acaba.
-* ``a/d``: Movimentos Laterais;
-* ``w``: Pulo
+Impeça o baú de cair no chão, para cada acerto você ganha 1 ponto. Cada vez que ganha 5 pontos facas aparecem no mapa dificultando o jogo. Se o baú cair ou alguma das facas o acertarem o jogo acaba.
+* ``a/d``: Mover Esquerda/Direita;
+* ``w``: Pular;
+OBS: Para recomeçar o jogo renicie a página do navegador.
