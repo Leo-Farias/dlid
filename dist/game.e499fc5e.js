@@ -141,33 +141,39 @@ exports.LoadScene = void 0;
 
 var _CST = require("../CST");
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 var LoadScene = /*#__PURE__*/function (_Phaser$Scene) {
   _inherits(LoadScene, _Phaser$Scene);
 
+  var _super = _createSuper(LoadScene);
+
   function LoadScene() {
     _classCallCheck(this, LoadScene);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(LoadScene).call(this, {
+    return _super.call(this, {
       key: _CST.CST.SCENES.LOAD
-    }));
+    });
   }
 
   _createClass(LoadScene, [{
@@ -203,35 +209,41 @@ exports.PlayScene = void 0;
 
 var _CST = require("../CST");
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 var Math = Phaser.Math;
 
 var PlayScene = /*#__PURE__*/function (_Phaser$Scene) {
   _inherits(PlayScene, _Phaser$Scene);
 
+  var _super = _createSuper(PlayScene);
+
   function PlayScene() {
     _classCallCheck(this, PlayScene);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(PlayScene).call(this, {
+    return _super.call(this, {
       key: _CST.CST.SCENES.PLAY
-    }));
+    });
   }
 
   _createClass(PlayScene, [{
@@ -267,10 +279,13 @@ var PlayScene = /*#__PURE__*/function (_Phaser$Scene) {
     value: function create() {
       this.facing = "right";
       this.spawned = false;
+      this.playerSpeed = 280;
+      this.canScore = true;
       this.floor = this.physics.add.staticGroup();
-      this.floor.create(0, 565, 'floor').setScale(8, 1.3).refreshBody();
+      this.floor.create(0, 580, 'floor').setScale(8, 2.5).refreshBody();
       this.add.image(0, 0, 'background').setOrigin(0, 0);
       this.score = 0;
+      this.gameover = false;
       this.scoreText = this.add.text(this.game.renderer.width / 2 - 50, 50, "Score: 0");
       this.player = this.physics.add.sprite(Math.Between(20, 780), 520, "wizzard", "wizzard_f_idle_right_01.png").setScale(2);
       this.player.setCollideWorldBounds(true);
@@ -283,8 +298,12 @@ var PlayScene = /*#__PURE__*/function (_Phaser$Scene) {
         this.chest = this.chests.create(Math.Between(400, 780), 50, "chest");
       }
 
-      this.chest.setCollideWorldBounds(true);
+      this.chest.setCollideWorldBounds({
+        bounceX: true,
+        bounceY: false
+      });
       this.chest.setGravity(this.chest.body.velocity.x, -200);
+      this.chest.setMaxVelocity(150, 250);
       this.chest.setBounce(1);
       this.physics.add.collider(this.player, this.floor);
       this.physics.add.collider(this.knives, this.floor);
@@ -298,11 +317,11 @@ var PlayScene = /*#__PURE__*/function (_Phaser$Scene) {
     value: function update() {
       //  HORIZONTAL MOVIMENT
       if (this.cursors.left.isDown) {
-        this.player.setVelocityX(-180);
+        this.player.setVelocityX(-this.playerSpeed);
         this.player.anims.play("wizzard_run_l", true);
         this.facing = "left";
       } else if (this.cursors.right.isDown) {
-        this.player.setVelocityX(180);
+        this.player.setVelocityX(this.playerSpeed);
         this.player.anims.play("wizzard_run_r", true);
         this.facing = "right";
       } else {
@@ -311,11 +330,16 @@ var PlayScene = /*#__PURE__*/function (_Phaser$Scene) {
       } //  VERTICAL MOVIMENT
 
 
-      if (this.cursors.up.isDown && this.player.body.touching.down) this.player.setVelocityY(-200);
+      if ((this.cursors.up.isDown || this.cursors.space.isDown) && this.player.body.touching.down) this.player.setVelocityY(-200);
+      if (this.gameover && this.cursors.space.isDown) this.resetGame();
 
       if (this.score % 5 == 0 && this.score != 0 && !this.spawned) {
         this.spawnKnives();
         this.spawned = true;
+      }
+
+      if (this.chest.body.velocity.y > 0 && this.canScore === false) {
+        this.canScore = true;
       }
 
       if (this.score % 5 != 0 || this.score == 0) {
@@ -323,23 +347,43 @@ var PlayScene = /*#__PURE__*/function (_Phaser$Scene) {
       }
     }
   }, {
+    key: "resetGame",
+    value: function resetGame() {
+      this.registry.destroy(); // destroy registry
+
+      this.events.off(); // disable all active events
+
+      this.scene.restart(); // restart current scene
+    }
+  }, {
     key: "touchChest",
     value: function touchChest(player, chest) {
-      if (player.x > chest.x) chest.setVelocity(-200, -250 + (player.body.velocity.y - 140));else if (player.x < chest.x) chest.setVelocity(200, -250 + (player.body.velocity.y - 140));else chest.setVelocity(0, -250 + (player.body.velocity.y - 140));
-      this.score += 1;
-      this.scoreText.setText('Score: ' + this.score);
+      if (this.canScore) {
+        if (this.facing === 'left') chest.setVelocity(-150, -300);else if (this.facing === 'right') chest.setVelocity(150, -300);else chest.setVelocity(0, -250 + (player.body.velocity.y - 200));
+        this.score += 1;
+        this.scoreText.setText('Score: ' + this.score);
+        this.canScore = false;
+      }
     }
   }, {
     key: "touchKnife",
     value: function touchKnife(player, knife) {
       this.physics.pause();
       player.setTint(0xff0000);
+      this.gameover = true;
+      this.scoreText.setPosition(this.game.renderer.width / 2 - 150, 50);
+      this.scoreText.setAlign('center');
+      this.scoreText.setText('A knife hit you.\nPress Spacebar to restart\nFinal Score: ' + this.score);
     }
   }, {
     key: "chestTouchFloor",
     value: function chestTouchFloor(chest, floor) {
       this.physics.pause();
       chest.setTint(0xff0000);
+      this.gameover = true;
+      this.scoreText.setPosition(this.game.renderer.width / 2 - 150, 50);
+      this.scoreText.setAlign('center');
+      this.scoreText.setText('You let the chest drop.\nPress Spacebar to restart\nFinal Score: ' + this.score);
     }
   }, {
     key: "spawnKnives",
@@ -375,7 +419,7 @@ var game = new Phaser.Game({
     default: "arcade",
     arcade: {
       gravity: {
-        y: 300
+        y: 400
       },
       debug: false
     }
@@ -385,7 +429,7 @@ var game = new Phaser.Game({
     pixelArt: true
   }
 });
-},{"./scenes/LoadScene":"src/scenes/LoadScene.js","./scenes/PlayScene":"src/scenes/PlayScene.js"}],"C:/Users/Leonardo/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./scenes/LoadScene":"src/scenes/LoadScene.js","./scenes/PlayScene":"src/scenes/PlayScene.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -413,7 +457,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52401" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60413" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -589,5 +633,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/Leonardo/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/game.js"], null)
+},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/game.js"], null)
 //# sourceMappingURL=/game.e499fc5e.js.map
